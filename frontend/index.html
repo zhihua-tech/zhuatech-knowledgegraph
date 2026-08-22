@@ -1,0 +1,53 @@
+<!doctype html>
+<!-- Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="知华科技智能知识图谱系统，把分散的业务实体、关系和来源证据组织为可治理知识网络。预留 DeepSeek 兼容接口。">
+  <meta name="keywords" content="智能知识图谱,实体关系抽取,企业知识管理,图数据库,DeepSeek Java,知华科技">
+  <title>ZhuaTech Knowledge Graph｜知华科技智能知识图谱系统</title><link rel="icon" href="favicon.svg"><link rel="stylesheet" href="style.css">
+</head>
+<body style="--accent:#19718b;--accent-2:#2e8da6">
+  <aside class="sidebar">
+    <a class="brand" href="https://www.zhuatech.cn/" target="_blank"><span class="brand-mark">ZH</span><span><b>知华科技</b><small>KNOWLEDGE GRAPH</small></span></a>
+    <div class="workspace-name"><span>企业工作空间</span><b>上海演示环境⌄</b></div>
+    <nav><button class="nav-item active"><span>▦</span>图谱浏览</button>
+      <button class="nav-item "><span>◇</span>实体治理</button>
+      <button class="nav-item "><span>✓</span>关系审核</button>
+      <button class="nav-item "><span>⌁</span>查询中心</button></nav>
+    <div class="side-card"><b>本地演示模式</b><p>不会调用外部模型，也不会上传真实业务数据。</p><a href="https://www.zhuatech.cn/" target="_blank">访问知华科技官网 ↗</a></div>
+  </aside>
+  <main>
+    <header class="topbar"><div><p>企业知识关联 / 工作台</p><h1>智能知识图谱</h1></div><div class="top-actions"><button class="icon-button">⌕</button><button class="icon-button">?</button><span class="avatar">知</span></div></header>
+    <div class="content">
+      <section class="page-head"><div><h2>企业知识关联工作台</h2><p>把分散的业务实体、关系和来源证据组织为可治理知识网络</p></div><button class="primary" id="run-open">＋ 新建分析任务</button></section>
+      <section class="metrics"><article class="metric"><span>实体数量</span><strong>8,426</strong><small>较昨日 +8%</small></article>
+        <article class="metric"><span>有效关系</span><strong>21,308</strong><small>本周保持稳定</small></article>
+        <article class="metric"><span>待审核</span><strong>94</strong><small>需要优先处理</small></article>
+        <article class="metric"><span>来源覆盖</span><strong>87%</strong><small>数据更新于 10:30</small></article></section>
+      <section class="workspace-grid">
+        <article class="panel queue-panel">
+          <header><div><h3>当前处理队列</h3><p>按风险和更新时间排序</p></div><div class="tools"><label>⌕<input id="search" placeholder="搜索记录"></label><button id="refresh">刷新</button></div></header>
+          <div class="table-wrap"><table><thead><tr><th>实体名称</th><th>实体类型</th><th>新关系</th><th>可信度</th><th>治理状态</th></tr></thead><tbody><tr data-keywords="华东仓升级项目 项目 12 高 已发布"><td><b>华东仓升级项目</b></td><td>项目</td><td>12</td><td><span class="risk r0">高</span></td><td>已发布</td></tr>
+            <tr data-keywords="海岳设备集团 客户 8 高 已发布"><td><b>海岳设备集团</b></td><td>客户</td><td>8</td><td><span class="risk r1">高</span></td><td>已发布</td></tr>
+            <tr data-keywords="库存锁定接口 系统接口 5 中 待审核"><td><b>库存锁定接口</b></td><td>系统接口</td><td>5</td><td><span class="risk r2">中</span></td><td>待审核</td></tr></tbody></table></div>
+          <footer><span>显示 3 条重点记录</span><div><button>‹</button><b>1</b><button>›</button></div></footer>
+        </article>
+        <article class="panel insight-panel">
+          <header><div><span class="eyebrow">AI 辅助分析</span><h3>库存锁定接口</h3><p>项目知识关系治理</p></div><span class="status">待人工确认</span></header>
+          <section class="summary"><b>分析摘要</b><p>“库存锁定接口”与 OMS、WMS 及华东仓升级项目存在关联，当前有两条关系仅来自会议纪要，发布前需补充接口文档证据。</p></section>
+          <ul class="findings"><li><span>1</span><div><b>识别结果</b><p>识别 3 个系统与 1 个项目实体</p></div><em>94%</em></li>
+              <li><span>2</span><div><b>风险关注</b><p>两条关系拥有正式接口文档</p></div><em>82%</em></li>
+              <li><span>3</span><div><b>处理边界</b><p>两条关系仅有会议纪要来源</p></div><em>76%</em></li></ul>
+          <section class="actions"><b>建议动作</b><label><input type="checkbox"><span>补充接口文档来源链接</span></label>
+              <label><input type="checkbox"><span>由系统负责人审核关系方向</span></label>
+              <label><input type="checkbox"><span>审核后发布到项目知识域</span></label></section>
+          <footer><button class="secondary">查看依据</button><button class="primary" id="approve">确认并进入流程</button></footer>
+        </article>
+      </section>
+      <div class="audit-line"><span>最后同步：2026-08-22 10:30</span><span>所有模型输出均需人工复核 · 上海如静知华信息科技有限公司</span></div>
+    </div>
+  </main>
+  <dialog id="run-dialog"><form method="dialog"><button class="close" value="cancel">×</button><span class="dialog-icon">图</span><h3>新建智能知识图谱任务</h3><p>填写演示对象与业务上下文，系统将执行本地确定性规则。</p><label>分析对象<input id="subject" value="库存锁定接口"></label><label>业务场景<input id="scenario" value="项目知识关系治理"></label><label>补充上下文<textarea id="context">请结合当前业务规则给出可解释结果和后续动作。</textarea></label><label class="check"><input id="human-review" type="checkbox" checked> 结果进入人工复核队列</label><button class="primary wide" id="run-submit" value="default">运行演示分析</button><small id="run-status"></small></form></dialog>
+  <div class="toast" id="toast">已确认，任务进入后续流程</div><script src="app.js"></script>
+</body></html>
