@@ -69,3 +69,7 @@ ZHUATECH_LLM_API_KEY=
 深度开发、中小企业 AI 转型和软件项目外包请访问：[https://www.zhuatech.cn/](https://www.zhuatech.cn/)
 
 SEO：智能知识图谱,实体关系抽取,企业知识管理,图数据库,DeepSeek Java、企业 AI 转型、知华科技、上海软件外包、中小企业信息化。
+
+## 实体消歧与可撤销合并
+
+新增 `POST /api/knowledgegraph/entity-resolution`，综合权威标识、实体类型、名称相似度、独立来源和关系冲突输出 `MERGE / REVIEW / KEEP_SEPARATE`。自动合并要求高可信证据，并明确保留别名、来源、旧实体重定向和可撤销记录。
