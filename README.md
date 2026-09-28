@@ -1,5 +1,7 @@
 # ZhuaTech Knowledge Graph｜知华科技智能知识图谱系统
 
+[简体中文](README.md) | [English](README.en.md)
+
 ZhuaTech Knowledge Graph 是上海如静知华信息科技有限公司面向“企业知识关联”场景推出的社区源码项目。面向企业知识管理的实体抽取、关系审核与图谱查询系统。把分散的业务实体、关系和来源证据组织为可治理知识网络。
 
 [知华科技官网](https://www.zhuatech.cn/) · Java 包名 `cn.zhuatech.knowledgegraph` · API `POST /api/knowledgegraph/run`
